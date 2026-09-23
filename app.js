@@ -1,3 +1,7 @@
+const menuButton=document.querySelector('.menu');
+const siteNav=document.querySelector('#site-nav');
+function closeMobileMenu(){if(!siteNav||!menuButton)return;siteNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Open menu')}
+if(menuButton&&siteNav){menuButton.addEventListener('click',()=>{const open=siteNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close menu':'Open menu')});siteNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMobileMenu));window.addEventListener('resize',()=>{if(window.innerWidth>800)closeMobileMenu()})}
 const configured=Boolean(window.LEXCESS_SUPABASE_URL&&window.LEXCESS_SUPABASE_ANON_KEY);const db=configured?supabase.createClient(window.LEXCESS_SUPABASE_URL,window.LEXCESS_SUPABASE_ANON_KEY):null;
 const demoProducts=[{name:'After Hours Dress',category:'Dresses',price:850,description:'A sculpted statement silhouette.'},{name:'Lime Theory Set',category:'Sets',price:720,description:'Sharp, playful and built for movement.'},{name:'Noir Column Dress',category:'Dresses',price:980,description:'Minimal lines with maximum presence.'}];
 function money(v){return `GH₵ ${Number(v||0).toLocaleString()}`}
