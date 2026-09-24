@@ -1,12 +1,77 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Lexcess Clothing</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
-<header><a class="logo" href="#home" aria-label="Lexcess Clothing">LEXCESS<small>CLOTHING</small></a><nav id="site-nav"><a href="#shop">Shop</a><a href="#about">About</a><a href="#booking">Booking</a><a href="#contact">Contact</a><a class="admin-link" href="admin.html">Admin</a></nav><button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button></header>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lexcess Clothing — African Fashion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="Lexcess Clothing"><span>LEXCESS</span><small>CLOTHING</small></a>
+  <nav id="site-nav" aria-label="Main navigation">
+    <a class="active" href="#home">Home</a><a href="#shop">Shop</a><a href="#about">About</a><a href="#booking">Booking</a><a href="#contact">Contact</a>
+    <a class="admin-link" href="admin.html">Admin</a>
+  </nav>
+  <div class="header-tools"><a href="#shop" aria-label="Search">⌕</a><a href="#shop" aria-label="Shop">Bag</a><button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">☰</button></div>
+</header>
+
 <main>
-<section id="home" class="hero"><div class="hero-copy-wrap"><p class="eyebrow">STYLE • CONFIDENCE • YOU</p><h1>Style that<br><em>speaks</em> you.</h1><p class="hero-copy">Curated fashion for women and men. Dresses, shirts, shorts, sets and anything else you want to wear with confidence.</p><div class="hero-actions"><a class="btn" href="#shop">Shop the collection <span>→</span></a><a class="text-link" href="#booking">Book a fitting</a></div></div><div class="hero-photo"><img src="assets/hero-african-woman.jpg" alt="Black African fashion model wearing a modern look"><div class="hero-tag">LEXCESS / GHANA</div></div></section>
-<section class="category-strip" aria-label="Shop categories"><a href="#shop" data-filter="All">All</a><a href="#shop" data-filter="Women">Women</a><a href="#shop" data-filter="Men">Men</a><a href="#shop" data-filter="Dresses">Dresses</a><a href="#shop" data-filter="Tops">Tops</a><a href="#shop" data-filter="Bottoms">Bottoms</a><a href="#shop" data-filter="Sets">Sets</a><a href="#shop" data-filter="Accessories">Accessories</a></section>
-<section id="shop" class="section shop-section"><div class="section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>Find your<br><em>next look.</em></h2></div><span id="product-count"></span></div><div id="products" class="grid"></div></section>
-<section class="editorial"><div class="editorial-image"><img src="assets/hero-african-woman.jpg" alt="Black African fashion editorial image"></div><div class="editorial-copy"><p class="eyebrow">LEXCESS EDIT</p><h2>Made for<br><em>every kind of you.</em></h2><p>Post a dress, men's shirt, shorts, a full set or anything in between. Every item can lead customers straight to a simple request form.</p><a class="text-link" href="#shop">Explore pieces →</a></div></section>
-<section id="about" class="statement"><p>MODERN STYLE. AFRICAN ENERGY. <em>YOUR</em> LOOK.</p></section>
-<section id="booking" class="section split"><div><p class="eyebrow">PRIVATE SERVICE</p><h2>Book a<br><em>fitting.</em></h2><p>Reserve a styling, fitting or consultation. We'll confirm your appointment.</p></div><form id="booking-form"><input name="name" placeholder="Full name" required><input name="phone" placeholder="Phone / WhatsApp" required><input name="email" type="email" placeholder="Email"><select name="service" required><option value="">Select service</option><option>Fitting</option><option>Styling consultation</option><option>Private shopping</option></select><input name="appointment_date" type="date" required><input name="appointment_time" type="time" required><textarea name="notes" placeholder="Anything we should know?"></textarea><button class="btn" type="submit">Request booking</button><p class="form-msg" id="booking-msg"></p></form></section>
-<section id="contact" class="contact"><div><p class="eyebrow">GET IN TOUCH</p><h2>Let's<br><em>talk.</em></h2></div><form id="contact-form"><input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email" required><textarea name="message" placeholder="Message" required></textarea><button class="btn" type="submit">Send message</button><p class="form-msg" id="contact-msg"></p></form></section>
-</main><footer><div><strong>LEXCESS</strong><small>CLOTHING</small></div><span>Made for your style.</span><a href="#home">Back to top ↑</a></footer>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script></body></html>
+<section id="home" class="hero">
+  <img class="hero-bg" src="assets/hero-men-women.jpg" alt="Black African man and woman wearing modern fashion">
+  <div class="hero-shade"></div>
+  <div class="hero-content">
+    <p class="hero-kicker">AFRICAN ROOTS &nbsp; / &nbsp; MODERN STYLE</p>
+    <h1>Style That<br><em>Speaks You.</em></h1>
+    <p class="hero-copy">Premium fashion for women and men. Bold pieces, effortless looks and timeless confidence — made for every you.</p>
+    <div class="hero-actions"><a class="gold-btn" href="#shop">Shop Now <span>→</span></a><a class="hero-link" href="#booking">Book a fitting</a></div>
+  </div>
+  <div class="hero-note">LEXCESS / GHANA</div>
+  <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+</section>
+
+<section class="category-wrap">
+  <div class="category-intro"><span></span><strong>Shop by Category</strong></div>
+  <div class="category-strip" aria-label="Shop categories">
+    <a href="#shop" data-filter="All"><i>ALL</i><b>All</b></a>
+    <a href="#shop" data-filter="Women"><i>W</i><b>Women</b></a>
+    <a href="#shop" data-filter="Men"><i>M</i><b>Men's Wear</b></a>
+    <a href="#shop" data-filter="Dresses"><i>D</i><b>Dresses</b></a>
+    <a href="#shop" data-filter="Tops"><i>T</i><b>Tops</b></a>
+    <a href="#shop" data-filter="Bottoms"><i>B</i><b>Bottoms</b></a>
+    <a href="#shop" data-filter="Sets"><i>S</i><b>Sets</b></a>
+    <a href="#shop" data-filter="Accessories"><i>A</i><b>Accessories</b></a>
+  </div>
+</section>
+
+<section id="shop" class="section collection-section">
+  <div class="section-head">
+    <div><p class="eyebrow">OUR COLLECTION</p><h2>Featured<br><em>Collection.</em></h2><p class="section-sub">Fresh styles. Bold looks. Always Lexcess.</p></div>
+    <div class="collection-meta"><span id="product-count"></span><a href="#shop">View All <b>→</b></a></div>
+  </div>
+  <div id="products" class="grid"></div>
+</section>
+
+<section id="about" class="editorial">
+  <div class="editorial-image"><img src="assets/hero-men-women.jpg" alt="Lexcess African fashion editorial"></div>
+  <div class="editorial-copy"><p class="eyebrow">THE LEXCESS EDIT</p><h2>Made for<br><em>every kind of you.</em></h2><p>From statement dresses to men's shirts, shorts, sets and accessories — Lexcess is a space for style that feels like you.</p><a class="dark-link" href="#shop">Explore pieces <span>→</span></a></div>
+</section>
+
+<section class="dark-statement"><div><p class="eyebrow">LEXCESS CLOTHING</p><h2>Wear your<br><em>confidence.</em></h2></div><p>Curated fashion with African energy and a modern point of view. Find your next look, then request it directly.</p></section>
+
+<section id="booking" class="section service-section">
+  <div class="service-copy"><p class="eyebrow">PRIVATE SERVICE</p><h2>Book a<br><em>fitting.</em></h2><p>Want to see a piece in person or get help choosing your look? Request a fitting, styling consultation or private shopping session.</p></div>
+  <form id="booking-form" class="lux-form"><input name="name" placeholder="Full name" required><input name="phone" placeholder="Phone / WhatsApp" required><input name="email" type="email" placeholder="Email"><select name="service" required><option value="">Select service</option><option>Fitting</option><option>Styling consultation</option><option>Private shopping</option></select><input name="appointment_date" type="date" required><input name="appointment_time" type="time" required><textarea name="notes" placeholder="Anything we should know?"></textarea><button class="dark-btn" type="submit">Request Booking <span>→</span></button><p class="form-msg" id="booking-msg"></p></form>
+</section>
+
+<section class="contact-band" id="contact">
+  <div><p class="eyebrow">GET IN TOUCH</p><h2>Let's<br><em>talk.</em></h2><p>Questions, sizing help or a special request? Send us a message.</p></div>
+  <form id="contact-form" class="lux-form"><input name="name" placeholder="Name" required><input name="email" type="email" placeholder="Email" required><textarea name="message" placeholder="Message" required></textarea><button class="gold-btn" type="submit">Send Message <span>→</span></button><p class="form-msg" id="contact-msg"></p></form>
+</section>
+</main>
+
+<footer><div class="footer-brand"><strong>LEXCESS</strong><small>CLOTHING</small></div><div class="footer-center">AFRICAN ROOTS / MODERN STYLE</div><a href="#home">Back to top ↑</a></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
